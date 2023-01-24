@@ -1,0 +1,8 @@
+string1=int(input("enter the string"))
+string1=str(string1)
+string2=string1[::-1]
+if(string1==string2):
+    print("true")
+else:
+    print("false")
+    
