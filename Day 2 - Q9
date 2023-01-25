@@ -1,0 +1,10 @@
+month=str(input("enter the month"))
+date=int(input("enter the date"))
+if(month=="march" and date>19) or (month=="april")or (month=="may") or (month=="june" and date<21):
+    print("summer")
+elif(month=="june" and date>20) or (month=="july") or (month=="august") or (month=="september" and date<22):
+    print("spring")
+elif(month=="september" and date>22) or(month=="october") or (month=="november") or (month=="december" and date<21):
+    print("fall")
+else:
+    print("winter")
