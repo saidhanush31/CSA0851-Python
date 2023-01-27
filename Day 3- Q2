@@ -1,0 +1,23 @@
+import itertools 
+digit=eval(input("Enter the number of digits:"))
+num=input("Enter the number:")
+while True:
+    x=True
+    if (len(num)!=digit or int(num)<=0):
+        x=False
+        print("Invalid Input, OUT OF LIMIT!")
+    elif digit==2:
+        if num[0]==num[1]:
+            print("Invalid input, unique permutation")
+            x=False
+    elif digit==3:
+        if (num[0]==num[1]==num[2]):
+            print("Invalid input, unique permutation")
+            x=False
+    break
+if x==True:
+    nums=list(num)
+    permutations = list(itertools.permutations(nums))
+    p=([''.join(permutation) for permutation in permutations])
+    p.remove(num)
+    print(p)
